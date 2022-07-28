@@ -1,0 +1,39 @@
+#sign a {
+    background-color: rgb(57, 133, 57, 80%);
+    padding: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 9px;
+    position: relative;
+    top: 25px;
+}
+#reg {
+    text-align: center;
+    padding: 30px;
+    background-color: lightgreen;
+    color: rgb(255, 0, 128);
+    font-size: 25px;
+    font-family: sans-serif;
+}
+#username {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#password {
+    margin-top: 10px;
+}
+#login{
+    float: right;
+    margin-right: 10px;
+}
+#login a {
+    background-color: rgb(57, 133, 57, 80%);
+    padding: 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 9px;
+    position: relative;
+    top: -14px;
+}
