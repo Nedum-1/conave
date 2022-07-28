@@ -6,7 +6,7 @@ window.addEventListener('load', () =>{
     let e = document.querySelector('#phoneno')
     let f = document.querySelector('#password')
     let g = document.querySelector('#cpassword')
-    let i = document.querySelector('#submit')
+    let i = document.querySelector('#submit');
 
     let _alocal = localStorage.getItem('username')
     let _blocal = localStorage.getItem('firstname')

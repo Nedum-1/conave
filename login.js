@@ -8,7 +8,7 @@ pinuname = document.querySelector('#pinuname')
 //uname = document.querySelector('#uname')
 //pname = document.querySelector('#pname')
 yyy = function(){
-    event.preventDefault()
+    event.preventDefault();
 }
 funone = function(){
     if (username != a.value && a.value != ""){

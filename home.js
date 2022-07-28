@@ -18,7 +18,7 @@ cancel.addEventListener('click', () =>{
         document.getElementById('ans').style.backgroundColor = "white"
     }
     else{
-        document.getElementById('show').style.display = "none"  
+        document.getElementById('show').style.display = "none";  
     }
 })
 console.log(stay)
