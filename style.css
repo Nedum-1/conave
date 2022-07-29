@@ -6,6 +6,7 @@
 body {
     background-color: teal;
     height: 100%;
+    padding: 0px;
 }
 .container {
     min-height: 600px;
@@ -140,9 +141,17 @@ input {
 }
 @media (max-width: 900px){
     .container {
-        min-height: 600px;
-        max-height: 900px ;
-        min-width: 300px;
-        max-width: 350px;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        margin-left: 3%; margin-right: 3%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        min-height: 650px; max-height: 720px; max-width: 700px;
+        
+     
     }
 }
