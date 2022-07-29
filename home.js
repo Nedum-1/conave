@@ -4,21 +4,28 @@ logout = () =>{
 }
 let cancel = document.querySelector('#show')
 let stay = document.querySelector('#ans')
+let no = document.querySelector('.no')
 
-
-funn =()=>{
-    document.getElementById('ans').style.backgroundColor = "yellow"
-}
-stay.addEventListener('click', funn)
-
+    
+stay.addEventListener('click', ()=>{ 
+    if(document.getElementById('ans').style.backgroundColor == "red"){
+    document.getElementById('ans').style.backgroundColor = "teal"
+    }
+    else{
+        document.getElementById('ans').style.backgroundColor = "yellow"
+    }
+})
 
 cancel.addEventListener('click', () =>{
     if(document.getElementById('ans').style.backgroundColor == "yellow"){
         document.getElementById('show').style.display = "block"
-        document.getElementById('ans').style.backgroundColor = "white"
+        document.getElementById('ans').style.backgroundColor = "teal"
     }
     else{
         document.getElementById('show').style.display = "none"
     }
 })
-console.log(stay)
+no.addEventListener('click', () =>{
+    document.getElementById('ans').style.backgroundColor = "red"
+})
+console.log(no)

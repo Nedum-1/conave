@@ -138,3 +138,11 @@ input {
     transition: 0.5s;
     display: none;
 }
+@media (max-width: 900px){
+    .container {
+        min-height: 600px;
+        max-height: 900px ;
+        min-width: 300px;
+        max-width: 350px;
+    }
+}

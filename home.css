@@ -13,6 +13,7 @@ body{
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    background-attachment: fixed;
 }
 header {
     width: 100%;
@@ -154,7 +155,7 @@ input[name = "r"]{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 255, 255, 50%);
+    background-color:rgb(230, 230, 250, 50%);
     transition: 1s;
     display: none;
     
@@ -163,7 +164,7 @@ input[name = "r"]{
     width: 400px;
     height: 200px;
     border-radius: 10px;
-    background-color: white;
+    background-color: teal;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -184,8 +185,22 @@ input[name = "r"]{
     line-height: 70px;
     font-size: 22px;
 }
-.anss button{
+.anss a{
+    text-decoration: none;
+    max-height: auto;
+    width: auto;
+    background-color: lavender;
+    display: inline-block;
+    font-size: 15px;
+    font-family: sans-serif;
     padding: 10px;
+    line-height: normal;
+    color: black;
+    border-radius: 5px;
+}
+.anss a:hover{
+    box-shadow: 0 0 0.5rem black;
+    opacity: 0.8;
 }
 .yes {
     margin-left: 80px;
@@ -194,4 +209,27 @@ input[name = "r"]{
 .no {
     margin-right: 80px;
     float: right;
+}
+@media (max-width: 900px){
+    #ans{
+        max-width: 300px;
+        max-height: 150px;
+        min-width: 200px;
+        min-height: 100px;
+    }
+    .anss{
+        font-size: 15px;
+    }
+    .anss a{
+        font-size: 15px;
+        box-shadow: 0 0 0.5rem black;
+    }
+    .yes {
+        margin-left: 60px;
+        float: left;
+    }
+    .no {
+        margin-right: 60px;
+        float: right;
+    }
 }
