@@ -139,19 +139,17 @@ input {
     transition: 0.5s;
     display: none;
 }
-@media (max-width: 900px){
+@media (max-width: 800px){
     .container {
-        position: absolute;
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
+        width: 85%;
+        height: auto;
+        background-color: lavender;
+        padding: 15px;
+        position: relative;
         margin: auto;
-        margin-left: 3%; margin-right: 3%;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        min-height: 650px; max-height: 720px; max-width: 700px;
-        
-     
+        top: 20px;
+        bottom: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 0.5rem black;
     }
 }
