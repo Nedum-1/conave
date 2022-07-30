@@ -8,7 +8,8 @@ imenu.addEventListener('click', () =>{
     }
 })
 logout = () =>{
-    document.getElementById('show').style.display = "block"
+    document.getElementById('show').style.display = "block";
+    document.getElementById('links').style.height = "0px"
 }
 let cancel = document.querySelector('#show')
 let stay = document.querySelector('#ans')
