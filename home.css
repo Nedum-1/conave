@@ -14,10 +14,11 @@ body{
     width: 100%;
     height: 100%;
     background-attachment: fixed;
+    
 }
 header {
     width: 100%;
-    height: 60px;
+    height:auto;
     background-color: transparent;
     margin-top: 15px;
     box-shadow: 0 0 1rem black;
@@ -210,6 +211,37 @@ input[name = "r"]{
     margin-right: 80px;
     float: right;
 }
+#links {
+    text-align: center;
+    height: 0;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 20px;
+    position: relative;
+    transition: 1s;
+    overflow: hidden
+    
+}
+#links a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-family: monospace;
+    text-transform: uppercase;
+    display: block;
+    background-color: transparent;
+    margin-top: 6px;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+
+
+
 @media (max-width: 900px){
     #ans{
         max-width: 300px;

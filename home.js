@@ -1,6 +1,14 @@
+let imenu = document.querySelector('#icon')
+imenu.addEventListener('click', () =>{
+    if(document.getElementById('links').style.height == "0px"){
+    document.getElementById('links').style.height = "220px"
+    }
+    else{
+        document.getElementById('links').style.height = "0px"
+    }
+})
 logout = () =>{
     document.getElementById('show').style.display = "block"
-    //document.getElementById('show').style.height = "100%"
 }
 let cancel = document.querySelector('#show')
 let stay = document.querySelector('#ans')
