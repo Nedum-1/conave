@@ -6,15 +6,17 @@
 *{
     margin: 0px;
     padding: 0px;
+   
 }
 body{
+    box-sizing: border-box;
     background: teal;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     background-attachment: fixed;
-    
+    overflow-x: hidden;
 }
 header {
     width: 100%;
@@ -50,6 +52,26 @@ header {
     border-radius: 10px;
     width: 100%;
     height: auto;
+    animation-name: innit;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+@keyframes innit {
+    0%{background: url(s1.png);
+        background-attachment: fixed;
+        background-size: contain;}
+    25%{background: url(s2.png);
+        background-attachment: fixed;
+        background-size: contain;}
+    50%{background: url(s3.png);
+        background-attachment: fixed;
+        background-size: contain;}
+    75%{background: url(s4.png);
+        background-attachment: fixed;
+        background-size: contain;}   
+    100%{background: url(s5.png);
+        background-attachment: fixed;
+        background-size: contain;}
 }
 .top {
     margin-top: -20px;
@@ -246,7 +268,98 @@ input[name = "r"]{
     border-radius: 6px;
     border: 1px solid black;
 }
+.not {
+    background-color: red;
+    padding: 10px;
+    color: yellow;
+    font-size: 20px;
+    font-family: monospace;
+    word-spacing: 5px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pics {
+    padding: 0%;
+    margin: 0%;
+    background-color: transparent;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid black;
+    background: linear-gradient( rgb(128, 128, 128, 50%), rgb(0, 0, 0, 80%));
+}
+.pics img {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    min-width: 78%;
+    max-width: 78%;
+    height: 260px;
+    overflow: hidden;
+    padding: 1%;
+    border-radius: 16px;
+    transition: .5s;
+}
+#no {
+    margin-left: -71%;
+}
+.yyy{
+    display: flex;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.pics input{
+    display: none;
+}
+.fin{
+    width: 50px;
+    height: 10px;
+    border: 2px solid gray;
+    margin-left: 6px;
+    border-radius: 9px;
+    
+}
+.fin:hover {
+    background:linear-gradient( rgb(255, 255, 255, 50%), rgb(128, 128, 128, 80%));
+}
 
+#r1:checked ~ #no {
+    margin-left: 0;
+}
+#r2:checked ~ #no {
+    margin-left: -71%;
+}
+#r3:checked ~ #no {
+    margin-left: -151%;
+}
+#r4:checked ~ #no {
+    margin-left: -231%;
+}
+#r5:checked ~ #no {
+    margin-left: -311%;
+}
+#r6:checked ~ #no {
+    margin-left: -391%;
+}
+#r7:checked ~ #no {
+    margin-left: -471%;
+}
+#r8:checked ~ #no {
+    margin-left: -551%;
+}
+#r9:checked ~ #no {
+    margin-left: -631%;
+}
+#r10:checked ~ #no {
+    margin-left: -711%;
+}
 
 
 
@@ -272,4 +385,5 @@ input[name = "r"]{
         margin-right: 60px;
         float: right;
     }
+    
 }

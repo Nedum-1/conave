@@ -1,4 +1,12 @@
 let imenu = document.querySelector('#icon')
+let imenu2 = document.querySelector('#icon2')
+
+
+window.addEventListener('keydown', (yy) =>{
+    if(event.key == "Enter"){
+        alert("Done")
+    }
+})
 imenu.addEventListener('click', () =>{
     if(document.getElementById('links').style.height == "0px"){
     document.getElementById('links').style.height = "220px"
