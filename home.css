@@ -380,6 +380,23 @@ input[name = "r"]{
 
 
 @media (max-width: 900px){
+    .pics {
+        height: 240px;
+    }
+    .pics .lab {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        height: 210px;
+        min-width: 78%;
+        max-width: 78%;
+        overflow: hidden;
+        padding: 1%;
+        border-radius: 16px;
+        transition: 5s;
+    }
     #ans{
         max-width: 300px;
         max-height: 150px;
