@@ -1,20 +1,15 @@
-let imenu = document.querySelector('#icon')
-let imenu2 = document.querySelector('#icon2')
-
-
-window.addEventListener('keydown', (yy) =>{
-    if(event.key == "Enter"){
-        alert("Done")
-    }
-})
-imenu.addEventListener('click', () =>{
-    if(document.getElementById('links').style.height == "0px"){
-    document.getElementById('links').style.height = "220px"
+//MENU BUTTON...
+let links = document.querySelector('#links')
+function open_menu(){
+    if(links.style.height == "220px"){
+        links.style.height = 0;
     }
     else{
-        document.getElementById('links').style.height = "0px"
-    }
-})
+        links.style.height = "220px";
+    }}
+
+
+//LOGOUT NOTIFICATION...
 logout = () =>{
     document.getElementById('show').style.display = "block";
     document.getElementById('links').style.height = "0px"
@@ -22,8 +17,7 @@ logout = () =>{
 let cancel = document.querySelector('#show')
 let stay = document.querySelector('#ans')
 let no = document.querySelector('.no')
-
-    
+  
 stay.addEventListener('click', ()=>{ 
     if(document.getElementById('ans').style.backgroundColor == "red"){
     document.getElementById('ans').style.backgroundColor = "teal"
@@ -45,4 +39,52 @@ cancel.addEventListener('click', () =>{
 no.addEventListener('click', () =>{
     document.getElementById('ans').style.backgroundColor = "red"
 })
-console.log(no)
+
+
+//IMAGE AUTO SLIDER...
+var timer = 1;
+setInterval(function(){
+    document.getElementById('r' + timer).checked = true;
+    timer++
+    if(timer > 10){
+        timer = 1
+    }
+}, 4500)
+
+
+//SIDE NAV...
+var firstname = localStorage.getItem("firstname")
+if(firstname){
+    document.getElementById("name").innerHTML = "Hello, " + firstname;
+}
+//Open Nav
+var open_sidenav = document.querySelector('#icon2')
+open_sidenav.addEventListener('click', ()=>{
+    document.getElementById('space-account').style.marginLeft = "0%";
+})
+
+//Close Side Nav...
+var close_sidenav = document.getElementById("close-nav")
+close_sidenav.addEventListener('click', ()=>{
+    document.getElementById('space-account').style.marginLeft = "-100%";
+    main.style.backgroundColor = "red"
+})
+var cover = document.querySelector('#space-account');
+var main = document.querySelector('#ff-account');
+main.addEventListener('click', ()=>{
+    if(main.style.backgroundColor == "red"){
+        main.style.backgroundColor = "lavender"
+    }
+    else{
+    main.style.backgroundColor = "red";
+    }
+})
+cover.addEventListener('click', ()=>{
+    if(main.style.backgroundColor == "red"){
+        main.style.backgroundColor = "lavender"
+        document.getElementById('space-account').style.marginLeft = "0%";
+    }
+    else{
+    document.getElementById('space-account').style.marginLeft = "-100%";
+    }
+})

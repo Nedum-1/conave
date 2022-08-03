@@ -48,7 +48,7 @@ header {
     font-size: 30px;
 }
 .father {
-    background: url(s2.png);
+    background: url("images/s2.png");
     background-attachment: fixed;
     background-size: contain;
     box-shadow: 0 0 5rem black;
@@ -60,19 +60,19 @@ header {
     animation-iteration-count: infinite;
 }
 @keyframes innit {
-    0%{background: url(s1.png);
+    0%{background: url("images/s1.png");
         background-attachment: fixed;
         background-size: contain;}
-    25%{background: url(s2.png);
+    25%{background: url("images/s2.png");
         background-attachment: fixed;
         background-size: contain;}
-    50%{background: url(s3.png);
+    50%{background: url("images/s3.png");
         background-attachment: fixed;
         background-size: contain;}
-    75%{background: url(s4.png);
+    75%{background: url("images/s4.png");
         background-attachment: fixed;
         background-size: contain;}   
-    100%{background: url(s5.png);
+    100%{background: url("images/s5.png");
         background-attachment: fixed;
         background-size: contain;}
 }
@@ -319,17 +319,20 @@ input[name = "r"]{
     height: 0;
     width: 0;
     margin-left: -71%;
+    animation-name: first;
+    animation-duration: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+
 }
 .yyy{
     width: 95%;
-
     align-content: center;
     display: flex;
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    
 }
 .pics input{
     display: none;
@@ -377,8 +380,6 @@ input[name = "r"]{
     margin-left: -711%;
 }
 
-
-
 @media (max-width: 900px){
     .pics {
         height: 240px;
@@ -419,4 +420,75 @@ input[name = "r"]{
         float: right;
     }
     
+    #ff-account{
+        height: 100%;
+        width: 250px;
+        position: relative;
+        left: 0;
+        top: 0;
+        background: lavender;
+        box-shadow: 0 0 5.5rem black;
+        padding: 15px;
+        text-align: left;
+        font-family: 'Courier New', Courier, monospace;
+        
+        margin-left: 0%;
+    }
+    #account {
+        height: 100%;
+        width: 250px;
+        overflow-y: auto;
+    }
+    #user-pic{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        left: 50%;
+        top: 0;
+        background-color: gray;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    #user-icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 40px;
+    }
+    #account a{
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 20px;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+        overflow-y: auto;
+        background-color: rgba(128, 128, 128, 0.226);
+        border-radius: 4px;
+    }
+    #account a:hover{
+        background-color: rgba(128, 128, 128, 0.329);
+    }
+    #name{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #close-nav{
+        float: right;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #space-account{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        margin-left: -100%;
+        transition: 0.5s;
+    }
 }
