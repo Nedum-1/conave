@@ -49,7 +49,30 @@ setInterval(function(){
     if(timer > 10){
         timer = 1
     }
-}, 4500)
+}, 5000)
+
+
+var bar = document.querySelector('.yyy') 
+var img = document.querySelector('.pics') 
+var eea = 0;
+
+
+window.addEventListener('load', () =>{
+    setInterval(function(){
+    eea++;
+    if(eea > 5){
+        eea = 0
+    }
+    if(eea == 5){
+        bar.style.display = "none";
+    }},2000)
+})
+
+img.addEventListener('click', () =>{
+    bar.style.display = "flex";
+    eea = 0;
+})
+
 
 
 //SIDE NAV...

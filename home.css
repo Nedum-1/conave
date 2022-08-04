@@ -2,6 +2,7 @@
     --header: lightgreen;
     --top: lightgreen;
     --button: rgb(46, 131, 46);
+    --tags: linear-gradient(to right, darkred, red);
 }
 *{
     margin: 0px;
@@ -272,9 +273,9 @@ input[name = "r"]{
     border: 1px solid black;
 }
 .not {
-    background-color: red;
+    background: var(--tags);
     padding: 7px;
-    color: yellow;
+    color:white;
     font-size: 15px;
     font-family: monospace;
     word-spacing: 5px;
@@ -333,6 +334,7 @@ input[name = "r"]{
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
+    display: none;
 }
 .pics input{
     display: none;
@@ -515,11 +517,11 @@ input[name = "r"]{
         border-radius: 6px;
     }
     #tip {
-        color: yellow;
+        color: white;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         padding: 5px;
-        background-color: red;
+        background: var(--tags);
         width: calc(100% - 10px);
         font-weight: bold;
         font-family: monospace;

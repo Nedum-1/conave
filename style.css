@@ -10,7 +10,7 @@ body {
 }
 .container {
     min-height: 600px;
-    max-height: 900px ;
+    max-height: auto ;
     width: 500px;
     background-color: lavender;
     position: relative;
@@ -40,8 +40,8 @@ p {
 }
 input {
     width: calc(100% - 20px);
-    padding: 8px;
-    font-size: 15px;
+    padding: 10px;
+    font-size: 20px;
     border-radius: 5px;
     border-bottom: solid gray;
     background-color: rgb(128, 128, 128, 10%);
