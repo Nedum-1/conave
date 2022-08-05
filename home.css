@@ -90,9 +90,23 @@ header {
 #find {
     margin-top: 60px;
 }
-#search-button {
-    padding: 10px;
+.search{
     width: 92%;
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.search label{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+}
+#search-button {
+    width: 90%;
+    padding: 10px;
     border-radius: 6px;
     border: none;
     font-size: 15px;
@@ -498,6 +512,7 @@ input[name = "r"]{
         transition: 0.5s;
     }
     .top-sales{
+        margin-top: 10px;
         width: 100%;
         height: auto;
         background: linear-gradient( rgb(128, 128, 128, 50%), rgb(0, 0, 0, 80%));
@@ -525,6 +540,7 @@ input[name = "r"]{
         width: calc(100% - 10px);
         font-weight: bold;
         font-family: monospace;
+        font-size: 20px;
     }
     .sal {
         position: relative;
@@ -544,7 +560,30 @@ input[name = "r"]{
         color: gold;
         font-size: 20px;
     }
-    #tip span {
+    #twoo{
+        margin-right: -100%;
         float: right;
+        animation-name: twoo;
+        animation-duration: 30s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+    }
+    #onee {
+        margin-left: -100%;
+        animation-name: onee;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes onee {
+        0% {margin-left: -100%;}
+        2% {margin-left: 20px;}
+        5% {margin-left: 0;}
+        100% {margin-left: 0;}
+    }
+    @keyframes twoo {
+        0% {margin-right: -100%;}
+        2% {margin-right: 20px;}
+        5% {margin-right: 0;}
+        100% {margin-right: 0;}
     }
 }
