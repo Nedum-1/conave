@@ -10,16 +10,17 @@ body {
 }
 .container {
     min-height: 600px;
-    max-height: auto ;
+    max-height: 900px ;
     width: 500px;
     background-color: lavender;
-    position: relative;
+    position: absolute;
     margin: auto;
     top: 50px;
     bottom: 50px;
     right: 0;
     left: 0;
     padding: 20px;
+    padding-bottom: 29px;
     border-radius: 15px;
 }
 .container .header {
@@ -40,8 +41,8 @@ p {
 }
 input {
     width: calc(100% - 20px);
-    padding: 10px;
-    font-size: 20px;
+    padding: 6px;
+    font-size: 16px;
     border-radius: 5px;
     border-bottom: solid gray;
     background-color: rgb(128, 128, 128, 10%);
