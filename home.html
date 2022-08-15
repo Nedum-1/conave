@@ -5,23 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-    <link rel="stylesheet" href="home.css">
+    <link media="screen and (max-width: 900px)" rel="stylesheet" href="home.css">
+    <link media="screen and (min-width: 901px)" rel="stylesheet" href="homepc.css">
     <script src="https://kit.fontawesome.com/76acaa6079.js"></script>
 </head>
 <body>
-    
     <div class="father">
         <div class="top">
             <header>
-                <p id="the">CONAVE
+                <div id="the"> <p> CONAVE </p>
                     <label id="icon" onclick="open_menu()">
                         <i class="fas fa-bars"></i>
                     </label>
                     <label id="icon2">
                         <i class="fas fa-user"></i>
                     </label>
-                </p>
-            
+                    <div id="link">
+                        <a href="#">Home</a>
+                        <a href="#">Supermarket</a>
+                        <a href="#">Categories</a>
+                        <a href="#">About</a>
+                        <a href="#" onclick="openit()">Account</a>
+                        <a href="#" onclick="logout()">Logout</a>
+                </div>
+            </div>
+                
             </header>
             <div id="links">
                     <a href="#">Home</a>
@@ -42,139 +50,140 @@
         Shop with us today <!--and enjoy a discount, we also deliver as fast as possible, we
         value our customers...-->
     </div>
-    <div class="pics">
-        <input type="radio" name="r" id="r1">
-        <input type="radio" name="r" id="r2">
-        <input type="radio" name="r" id="r3">
-        <input type="radio" name="r" id="r4">
-        <input type="radio" name="r" id="r5">
-        <input type="radio" name="r" id="r6">
-        <input type="radio" name="r" id="r7">
-        <input type="radio" name="r" id="r8">
-        <input type="radio" name="r" id="r9">
-        <input type="radio" name="r" id="r10">
-        
-        <img src="i1.jfif"id ="no">
-        <label class="lab" for="r1"><img src="images\i1.jfif"></label>
-        <label class="lab" for="r2"><img src="images\i2.jpg"></label>
-        <label class="lab" for="r3"><img src="images\i3.jpg"></label>
-        <label class="lab" for="r4"><img src="images\i4.jpg"></label>
-        <label class="lab" for="r5"><img src="images\p1.jpeg"></label>
-        <label class="lab" for="r6"><img src="images\p2.jpeg"></label>
-        <label class="lab" for="r7"><img src="images\p3.jpeg"></label>
-        <label class="lab" for="r8"><img src="images\p4.jpeg"></label>
-        <label class="lab" for="r9"><img src="images\p5.jpeg"></label>
-        <label class="lab" for="r10"><img src="images\p6.jpeg"></label>
+    <div class="catchment">
+        <div class="pics">
+            <input type="radio" name="r" id="r1">
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+            <input type="radio" name="r" id="r5">
+            <input type="radio" name="r" id="r6">
+            <input type="radio" name="r" id="r7">
+            <input type="radio" name="r" id="r8">
+            <input type="radio" name="r" id="r9">
+            <input type="radio" name="r" id="r10">
+            
+            <img src="i1.jfif"id ="no">
+            <label class="lab" for="r1"><img src="images\i1.jfif"></label>
+            <label class="lab" for="r2"><img src="images\i2.jpg"></label>
+            <label class="lab" for="r3"><img src="images\i3.jpg"></label>
+            <label class="lab" for="r4"><img src="images\i4.jpg"></label>
+            <label class="lab" for="r5"><img src="images\p1.jpeg"></label>
+            <label class="lab" for="r6"><img src="images\p2.jpeg"></label>
+            <label class="lab" for="r7"><img src="images\p3.jpeg"></label>
+            <label class="lab" for="r8"><img src="images\p4.jpeg"></label>
+            <label class="lab" for="r9"><img src="images\p5.jpeg"></label>
+            <label class="lab" for="r10"><img src="images\p6.jpeg"></label>
 
-        <div class="yyy">
-            <label for="r1" class="fin" id="fin1"></label>
-            <label for="r2" class="fin" id="fin2"></label>
-            <label for="r3" class="fin" id="fin3"></label>
-            <label for="r4" class="fin" id="fin4"></label>
-            <label for="r5" class="fin" id="fin5"></label>
-            <label for="r6" class="fin" id="fin6"></label>
-            <label for="r7" class="fin" id="fin7"></label>
-            <label for="r8" class="fin" id="fin8"></label>
-            <label for="r9" class="fin" id="fin9"></label>
-            <label for="r10" class="fin" id="fin10"></label>
+            <div class="yyy">
+                <label for="r1" class="fin" id="fin1"></label>
+                <label for="r2" class="fin" id="fin2"></label>
+                <label for="r3" class="fin" id="fin3"></label>
+                <label for="r4" class="fin" id="fin4"></label>
+                <label for="r5" class="fin" id="fin5"></label>
+                <label for="r6" class="fin" id="fin6"></label>
+                <label for="r7" class="fin" id="fin7"></label>
+                <label for="r8" class="fin" id="fin8"></label>
+                <label for="r9" class="fin" id="fin9"></label>
+                <label for="r10" class="fin" id="fin10"></label>
+            </div>
+        </div>
+    
+        <div class="cat">
+            <p>Categories</p>
+            <div class="catss">
+                <div class="cats" id="cat1">
+                    <img src="cat\electronics.webp" class="cat-img">
+                </div>
+                    <label>electronics</label>
+            </div>
+            <div class="catss">    
+                <div class="cats" id="cat2">
+                    <img src="cat\fashion.jpg" class="cat-img">
+                </div>
+                    <label>fashion</label>
+            </div>       
+            <div class="catss">
+                <div class="cats" id="cat3">
+                    <img src="cat\gadgets.jfif" class="cat-img">
+                </div>
+                    <label>gadgets</label>
+            </div>
+            <div class="catss">    
+                <div class="cats" id="cat4">
+                    <img src="cat\laptop.png" class="cat-img">
+                </div>
+                    <label>laptops</label>
+            </div>
+            <div class="catss">           
+                <div class="cats" id="cat5">
+                    <img src="cat\phone.jpg" class="cat-img">
+                </div>
+                    <label>phones</label>
+            </div>
+            <div class="catss">    
+                <div class="cats" id="cat6">
+                    <img src="cat\edibles.png" class="cat-img">
+                </div>
+                    <label>edibles</label>
+            </div>
+            <div class="catss">    
+                <div class="cats" id="cat7">
+                    <img src="cat\jewelry.webp" class="cat-img">
+                </div>
+                    <label>jewelry</label>
+            </div>
+            <div class="catss">        
+                <div class="cats" id="cat8">
+                    <img src="cat\mwears.webp" class="cat-img">
+                </div>
+                    <label>m-wears</label>
+            </div>
+            <div class="catss">       
+                <div class="cats" id="cat9">
+                    <img src="cat\wwears.jpg" class="cat-img">
+                </div>
+                    <label>w-wears</label>
+            </div>
+            <div class="catss">       
+                <div class="cats" id="cat10">
+                    <img src="cat\automobile.jpg" class="cat-img">
+                </div>
+                    <label>automobile</label>
+            </div>    
+            <div class="catss">       
+                <div class="cats" id="cat11">
+                    <img src="cat\fwear.webp" class="cat-img">
+                </div>
+                    <label>foot wears</label>
+            </div>    
         </div>
     </div>
-
     <div class="top-sales">
         <p id="tip">
             <span id="onee">
             <i id="star" class="fas fa-tag"></i> 
             Weekly Top Sales </span> 
             <span id="twoo"> Don't Miss Out!!! </span>
-        <div class="sales" id="sale1">
-            <div class="sal" id="sal1"><input type="text" id=""></div>
+        <div class="sales" id="sale1"> <img src="sales/glasses.png">
+                <span>₦2,500</span>
         </div>
-        <div class="sales" id="sale2">
-            <div class="sal" id="sal2"><input type="text" id=""></div>
+        <div class="sales" id="sale2"> <img src="sales/airpod.png">
+            <span>₦8,000</span>
         </div>
-        <div class="sales" id="sale3">
-            <div class="sal" id="sal3"><input type="text" id=""></div>
+        <div class="sales" id="sale3"> <img src="sales/fan.png">
+            <span>₦12,000</span>
         </div>
-        <div class="sales" id="sale4">
-            <div class="sal" id="sal4"><input type="text" id=""></div>
+        <div class="sales" id="sale4"> <img src="sales/glasses.png">
+           <span>₦2,500</span>
         </div>
-        <div class="sales" id="sale5">
-            <div class="sal" id="sal5"><input type="text" id=""></div>
+        <div class="sales" id="sale5"> <img src="sales/glasses.png">
+            <span>₦2,500</span>
         </div>
-        <div class="sales" id="sale6">
-            <div class="sal" id="sal6"><input type="text" id=""></div>
+        <div class="sales" id="sale6"> <img src="sales/glasses.png">
+            <span>₦2,500</span>
         </div>
     </div>
-   <div class="cat">
-        <p>Categories</p>
-        <div class="catss">
-            <div class="cats" id="cat1">
-                <img src="cat\electronics.webp" class="cat-img">
-            </div>
-                <label>electronics</label>
-        </div>
-        <div class="catss">    
-            <div class="cats" id="cat2">
-                <img src="cat\fashion.jpg" class="cat-img">
-            </div>
-                <label>fashion</label>
-        </div>       
-        <div class="catss">
-            <div class="cats" id="cat3">
-                <img src="cat\gadgets.jfif" class="cat-img">
-            </div>
-                <label>gadgets</label>
-        </div>
-        <div class="catss">    
-            <div class="cats" id="cat4">
-                <img src="cat\laptop.png" class="cat-img">
-            </div>
-                <label>laptops</label>
-        </div>
-        <div class="catss">           
-            <div class="cats" id="cat5">
-                <img src="cat\phone.jpg" class="cat-img">
-            </div>
-                <label>phones</label>
-        </div>
-        <div class="catss">    
-            <div class="cats" id="cat6">
-                <img src="cat\edibles.png" class="cat-img">
-            </div>
-                <label>edibles</label>
-        </div>
-        <div class="catss">    
-            <div class="cats" id="cat7">
-                <img src="cat\jewelry.webp" class="cat-img">
-            </div>
-                <label>jewelry</label>
-        </div>
-        <div class="catss">        
-            <div class="cats" id="cat8">
-                <img src="cat\mwears.webp" class="cat-img">
-            </div>
-                <label>m-wears</label>
-        </div>
-        <div class="catss">       
-            <div class="cats" id="cat9">
-                <img src="cat\wwears.jpg" class="cat-img">
-            </div>
-                <label>w-wears</label>
-        </div>
-        <div class="catss">       
-            <div class="cats" id="cat10">
-                <img src="cat\automobile.jpg" class="cat-img">
-            </div>
-                <label>automobile</label>
-        </div>    
-        <div class="catss">       
-            <div class="cats" id="cat11">
-                <img src="cat\fwear.webp" class="cat-img">
-            </div>
-                <label>foot wears</label>
-        </div>    
-   </div>
-   
    
    
    

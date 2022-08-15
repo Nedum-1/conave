@@ -82,7 +82,7 @@ if(firstname){
 }
 //Open Nav
 var open_sidenav = document.querySelector('#icon2')
-open_sidenav.addEventListener('click', ()=>{
+open_sidenav.addEventListener('click', openit = ()=>{
     document.getElementById('space-account').style.marginLeft = "0%";
 })
 
