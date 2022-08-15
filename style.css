@@ -142,7 +142,7 @@ input {
 @media (max-width: 800px){
     .container {
         width: 85%;
-        height: auto;
+        height: fit-content;
         background-color: lavender;
         padding: 15px;
         position: relative;
@@ -151,5 +151,6 @@ input {
         bottom: 20px;
         border-radius: 15px;
         box-shadow: 0 0 2.5rem black;
+        padding-bottom: 60px;
     }
 }
