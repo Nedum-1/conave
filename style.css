@@ -5,8 +5,8 @@
 }
 body {
     background-color: teal;
-    height: 100vh;
-    padding: 0px;
+    height: 100%;
+    box-sizing: border-box;
 }
 .container {
     height: fit-content;
@@ -142,15 +142,6 @@ input {
 @media (max-width: 800px){
     .container {
         width: 85%;
-        height: fit-content;
-        background-color: lavender;
-        padding: 15px;
-        position: relative;
-        margin: auto;
-        top: 20px;
-        bottom: 20px;
-        border-radius: 15px;
-        box-shadow: 0 0 2.5rem black;
-        padding-bottom: 60px;
+      
     }
 }
