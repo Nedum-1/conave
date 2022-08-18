@@ -113,16 +113,16 @@ cover.addEventListener('click', ()=>{
 })
 
 var not = document.querySelector('.nft')
-var notnum = 510;
+var notnum = 550;
 
 setInterval(()=>{
     var ok = 0.2 * notnum
     not.style.marginLeft = ok + "%"
     notnum--
 
-    if (notnum == -790){
+    if (notnum == -880){
         notnum = 510
     }
 
 
-}, 20)
+}, 5)

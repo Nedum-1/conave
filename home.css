@@ -388,6 +388,7 @@ input[name = "r"]{
     margin-left: -691%;
 }
 .nftt {
+    display: block;
     width: 100%;
     background-color: transparent;
     color: white;
@@ -396,11 +397,21 @@ input[name = "r"]{
     display: block;
     padding: 10px;
     font-family: sans-serif;
+    animation-name: noti;
+    animation-duration: 10s;
+    background-color: black;
 }
 .nft {
     white-space: nowrap;
     width: fit-content;
     margin-left: 120%;
+    
+}
+@keyframes noti {
+    0%{height: 0; padding: 0;}
+    20%{height: auto; background-color: darkblue; padding: 10px;}
+    50%{background-color: black;}
+    100%{background-color: black;}
 }
 
 @media (max-width: 900px){
@@ -559,7 +570,7 @@ input[name = "r"]{
         float: right;
     }
     .cat {
-        margin-top: 10px;
+        margin-top: 0px;
         width: 100%;
         height: auto;
         background: brown;
