@@ -1,11 +1,11 @@
 //MENU BUTTON...
 let links = document.querySelector('#links')
 function open_menu(){
-    if(links.style.height == "220px"){
+    if(links.style.height == "200px"){
         links.style.height = 0;
     }
     else{
-        links.style.height = "220px";
+        links.style.height = "200px";
     }}
 
 
@@ -120,7 +120,7 @@ setInterval(()=>{
     not.style.marginLeft = ok + "%"
     notnum--
 
-    if (notnum == -880){
+    if (notnum == -890){
         notnum = 510
     }
 
