@@ -120,9 +120,9 @@ setInterval(()=>{
     not.style.marginLeft = ok + "%"
     notnum--
 
-    if (notnum == -790){
+    if (notnum == -890){
         notnum = 510
     }
 
 
-}, 20)
+}, 10)
