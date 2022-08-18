@@ -441,7 +441,7 @@ input[name = "r"]{
     text-align: center;
     text-transform: capitalize;
     padding: 10px;
-    background: rgba(128, 128, 128, 0.452);
+    background: rgba(128, 128, 128, 0.192);
     border-radius: 5px;
 }    
 .cats{
