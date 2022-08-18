@@ -551,3 +551,6 @@ input[name = "r"]{
     margin-left: -100%;
     transition: 0.5s;
 }
+.nftt{
+   display: none;
+}

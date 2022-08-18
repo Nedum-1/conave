@@ -405,7 +405,6 @@ input[name = "r"]{
     white-space: nowrap;
     width: fit-content;
     margin-left: 120%;
-    
 }
 @keyframes noti {
     0%{height: 0; padding: 0;}
