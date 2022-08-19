@@ -1,0 +1,13 @@
+:root {
+    --back: linear-gradient(rgb(13, 13, 37), black) 
+}
+footer{
+    background: var(--back) ;
+    color: goldenrod;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    bottom: o;
+    
+}

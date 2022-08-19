@@ -112,17 +112,26 @@ cover.addEventListener('click', ()=>{
     }
 })
 
+
+//NOTIFICATION SLIDER 
 var not = document.querySelector('.nft')
 var notnum = 550;
+var px = 0
 
 setInterval(()=>{
     var ok = 0.2 * notnum
-    not.style.marginLeft = ok + "%"
-    notnum--
-
-    if (notnum == -890){
-        notnum = 510
+    if (notnum <= 550 && notnum >=1 ){
+    not.style.marginLeft = ok + "%";
+    notnum--;
+    
     }
-
-
-}, 6)
+    
+    if (notnum == 0 ){
+        not.style.marginLeft = px + "px";
+        px--
+    }
+    if (px == -915){
+        notnum = 550
+        px = 0
+    }
+}, 15)
