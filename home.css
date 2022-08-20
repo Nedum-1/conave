@@ -281,6 +281,9 @@ input[name = "r"]{
     border-radius: 6px;
     border: 1px solid black;
 }
+#links a:hover, #links #active {
+    background-color: rgb(0, 0, 0);
+}
 #link {
     display: none;
 }
@@ -423,6 +426,9 @@ input[name = "r"]{
     margin-left: 120%;
     font-size: 20px;
     display: block;
+}
+.nftd{
+    display: none;
 }
 @keyframes noti {
     0%{height: 0; padding: 0;}
@@ -610,6 +616,7 @@ input[name = "r"]{
         width: 60px;
         height: 60px;
         margin-bottom: 10px;
+        overflow: hidden;
     }
     .catss label {
         padding: 0;

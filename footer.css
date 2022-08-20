@@ -35,3 +35,7 @@ a {
     color: goldenrod;
     text-decoration: none;
 }
+.ffirst {
+    height: fit-content;
+    overflow: hidden;
+}

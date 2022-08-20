@@ -5,13 +5,13 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body{
     width: 100%n;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    background: teal;
+    background: black;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -19,9 +19,11 @@ body{
     background-attachment: fixed;
     overflow-x: hidden;
 }
+
+/*EVERYTHING AT THE TOP*/
 header {
     width: 100%;
-    height:auto;;
+    height: 60px;
     margin-top: 15px;
     box-shadow: 0 0 1rem black;
     background: transparent;
@@ -34,7 +36,7 @@ header {
     display: none;
 }
 #the {
-    padding: 15px;
+    padding: 8px;
     color: white;
     font-weight: bold;
     font-family: sans-serif;
@@ -110,8 +112,8 @@ header {
         width: 80px;
     }
 }
-#link a:hover {
-    background-color: rgb(0, 0, 0, 80%);
+#link a:hover, #link #active {
+    background-color: rgb(0, 0, 0);
 }
 #links {
     display: none;
@@ -141,18 +143,19 @@ header {
     border: none;
     font-size: 15px;
 }
+
+/*NOTIFICATION LINE*/
 .nftd {
     display: block;
     width: 100%;
-    background-color: transparent;
+    background: var(--tags);
     color: white;
     overflow: hidden;
     display: block;
     padding: 10px;
     font-family: sans-serif;
-    animation-name: noti;
-    animation-duration: 10s;
-    background-color: black;
+    text-transform: uppercase;
+    text-align: center;
 }
 .nft {
     white-space: nowrap;
@@ -161,65 +164,110 @@ header {
     font-size: 20px;
     display: block;
 }
-@keyframes noti {
-    0%{height: 0; padding: 0;}
-    21%{height: auto; padding: 10px;}
-    50%{background-color: black;}
-    100%{background-color: black;}
+/*CONTAINS 3 DIVS*/
+.catchement{
+    width: 100%;
+    height: 1090px;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
-
-.imgs{
-    width: 700px;
-    height: 500px;
-    overflow: hidden;
+/*IMAGE SLIDER*/
+.pics {
     position: relative;
     top: 0;
-    left: 10%;
-    margin-bottom: 100px;
-    border-radius: 9px;
-}
-.slides{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-}
-.slides img {
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-}
-.nav {
-    position: absolute;
-    top: 460px;
-    left: 50%;
-    transform: translateX(-50%)
-}
-.bar{
-    width: 50px;
-    height: 14px;
-    border: 3px solid wheat;
-    display: inline-block;
-    position: relative;
-    left: 0;
     right: 0;
+    box-sizing: border-box;
+    padding: 0%;
+    float: right;
+    display: flex;
+    height: 500px;
+    width: calc(70%);
+    overflow: hidden;
+    border: 1px solid black;
+    background: linear-gradient( rgb(128, 128, 128, 50%), rgb(0, 0, 0, 80%));
+    float: right;
+}
+.pics img{
+    width: 100%;
+    height: 100%;
+}
+.pics .lab {
+    position: relative;
+    top: 0;
+    bottom: 0;
     margin: auto;
-    border-radius: 3px;
-    transition: 0.5s;
+    display: block;
+    height: 350px;
+    min-width: 78%;
+    max-width: 78%;
+    overflow: hidden;
+    padding: 1%;
+    border-radius: 16px;
+    transition: 5s;
 }
-.bar:hover{
-    background-color: wheat;
-    cursor: pointer;
+#no {
+    transition: .5s;
+    height: 0;
+    width: 0;
+    margin-left: -67%;
 }
-input[name = "r"]{
-    display: nne;
+.yyy{
+    width: 95%;
+    align-content: center;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
 }
-#r1:checked ~ .s1 {
+.pics input{
+    display: none;
+}
+.fin{
+    width: 9.5%;
+    height: 15px;
+    border: 2px solid gray;
+    margin-left: 6px;
+    border-radius: 9px;  
+}
+.fin:hover {
+    background:linear-gradient( rgb(255, 255, 255, 50%), rgb(128, 128, 128, 80%));
+}
+#r1:checked ~ #no {
     margin-left: 0;
 }
-#r2:checked ~ .s1 {
-    margin-left: -100%;
+#r2:checked ~ #no {
+    margin-left: -67%;
 }
+#r3:checked ~ #no {
+    margin-left: -145%;
+}
+#r4:checked ~ #no {
+    margin-left: -223%;
+}
+#r5:checked ~ #no {
+    margin-left: -301%;
+}
+#r6:checked ~ #no {
+    margin-left: -379%;
+}
+#r7:checked ~ #no {
+    margin-left: -457%;
+}
+#r8:checked ~ #no {
+    margin-left: -535%;
+}
+#r9:checked ~ #no {
+    margin-left: -613%;
+}
+#r10:checked ~ #no {
+    margin-left: -691%;
+}
+
+
+/*LOGOUT NOTIFICATION*/
 #show{
     position: fixed;
     top: 0;
@@ -280,6 +328,7 @@ input[name = "r"]{
     float: right;
 }
 
+/*RED NOTIFICATION LINE*/
 .not {
     background: var(--tags);
     padding: 7px;
@@ -293,113 +342,17 @@ input[name = "r"]{
     text-transform: uppercase;
     display: none;
 }
-.pics {
-    margin-top: 10px;
-    position: relative;
-    box-sizing: border-box;
-    padding: 0%;
-    float: right;
-    background-color: transparent;
-    display: flex;
-    height: 500px;
-    width: calc(70% - 30px);
-    overflow: hidden;
-    border: 1px solid black;
-    background: linear-gradient( rgb(128, 128, 128, 50%), rgb(0, 0, 0, 80%));
-}
-.pics img{
-    width: 100%;
-    height: 100%;
-}
-.pics .lab {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    display: block;
-    height: 350px;
-    min-width: 78%;
-    max-width: 78%;
-    overflow: hidden;
-    padding: 1%;
-    border-radius: 16px;
-    transition: 5s;
-}
-#no {
-    transition: .5s;
-    height: 0;
-    width: 0;
-    margin-left: -71%;
-    animation-name: first;
-    animation-duration: 0s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: none;
 
-}
-.yyy{
-    width: 95%;
-    align-content: center;
-    display: flex;
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-}
-.pics input{
-    display: none;
-}
-.fin{
-    width: 9.5%;
-    height: 15px;
-    border: 2px solid gray;
-    margin-left: 6px;
-    border-radius: 9px;
-    
-}
-.fin:hover {
-    background:linear-gradient( rgb(255, 255, 255, 50%), rgb(128, 128, 128, 80%));
-}
 
-#r1:checked ~ #no {
-    margin-left: 0;
-}
-#r2:checked ~ #no {
-    margin-left: -71%;
-}
-#r3:checked ~ #no {
-    margin-left: -151%;
-}
-#r4:checked ~ #no {
-    margin-left: -231%;
-}
-#r5:checked ~ #no {
-    margin-left: -311%;
-}
-#r6:checked ~ #no {
-    margin-left: -391%;
-}
-#r7:checked ~ #no {
-    margin-left: -471%;
-}
-#r8:checked ~ #no {
-    margin-left: -551%;
-}
-#r9:checked ~ #no {
-    margin-left: -631%;
-}
-#r10:checked ~ #no {
-    margin-left: -711%;
-}
-
+/*TOP SALES*/
 .top-sales{
-    margin-top: 10px;
-    width: calc(70% - 30px);
+    position: relative;
+    right: 0;
+    width: calc(70% );
     height: fit-content;
     background: linear-gradient(to top, rgb(128, 128, 128, 50%), rgb(0, 0, 0, 80%));
     padding-bottom: 15px;
     float: left;
-    margin-left: 10px;
     margin-bottom: 20px;
 }
 .sales {
@@ -435,12 +388,12 @@ input[name = "r"]{
     border-top-right-radius: 10px;
     padding: 5px;
     background: var(--tags);
-    width: calc(100% - 10px);
+    width: calc(100%);
     font-weight: bold;
     font-family: monospace;
     font-size: 14px;
 }
-#star{
+#tag{
     color: gold;
     font-size: 20px;
 }
@@ -448,10 +401,14 @@ input[name = "r"]{
     float: right;
 }
 
+
+/*CATEGORIES SECTION*/
 .cat {
-    margin-top: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
     width: 30%;
-    height: 1067px;
+    height: 1078px;
     background: rgb(241, 239, 239);
     display: flex;
     flex-direction: column;
@@ -504,6 +461,7 @@ input[name = "r"]{
 }
 
 
+/*SIDE NAV*/
 #ff-account{
     height: 100%;
     width: 400px;
@@ -579,6 +537,10 @@ input[name = "r"]{
     margin-left: -100%;
     transition: 0.5s;
 }
+
+
+
+/*ANDROID NOTIFICATION LINE*/
 .nftt{
    display: none;
 }
