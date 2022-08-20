@@ -141,6 +141,33 @@ header {
     border: none;
     font-size: 15px;
 }
+.nftd {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+    display: block;
+    padding: 10px;
+    font-family: sans-serif;
+    animation-name: noti;
+    animation-duration: 10s;
+    background-color: black;
+}
+.nft {
+    white-space: nowrap;
+    width: 908px;
+    margin-left: 120%;
+    font-size: 20px;
+    display: block;
+}
+@keyframes noti {
+    0%{height: 0; padding: 0;}
+    21%{height: auto; padding: 10px;}
+    50%{background-color: black;}
+    100%{background-color: black;}
+}
+
 .imgs{
     width: 700px;
     height: 500px;
@@ -369,10 +396,11 @@ input[name = "r"]{
     margin-top: 10px;
     width: calc(70% - 30px);
     height: fit-content;
-    background: linear-gradient( rgb(128, 128, 128, 50%), rgb(0, 0, 0, 80%));
+    background: linear-gradient(to top, rgb(128, 128, 128, 50%), rgb(0, 0, 0, 80%));
     padding-bottom: 15px;
     float: left;
     margin-left: 10px;
+    margin-bottom: 20px;
 }
 .sales {
     background-color: white; 

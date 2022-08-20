@@ -426,7 +426,7 @@ input[name = "r"]{
 }
 @keyframes noti {
     0%{height: 0; padding: 0;}
-    21%{height: auto; background-color: darkblue; padding: 10px;}
+    21%{height: auto; padding: 10px;}
     50%{background-color: black;}
     100%{background-color: black;}
 }

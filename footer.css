@@ -2,19 +2,20 @@
     --back: linear-gradient(rgb(13, 13, 37), black) 
 }
 footer{
-    background: var(--back) ;
+    background-color: black ;
     color: goldenrod;
     width: 100%;
-    height: auto;
+    height: fit-content;
     padding: 10px;
-    position: relative;
-    bottom: o;
+    position: static;
     font-family: monospace;
     text-align: center;
+   
 }
 h3 {
    
     font-size: 30px;
+    margin-top: 10px;
 
 }
 .line {
@@ -28,4 +29,9 @@ h3 {
 .fa {
     padding: 10px;
     font-size: 20px;
+}
+a {
+    display: block;
+    color: goldenrod;
+    text-decoration: none;
 }
