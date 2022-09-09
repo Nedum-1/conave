@@ -5,49 +5,61 @@ a = document.querySelector('#username')
 b = document.querySelector('#password')
 c = document.querySelector('#submit')
 pinuname = document.querySelector('#pinuname')
-//uname = document.querySelector('#uname')
-//pname = document.querySelector('#pname')
+uname = document.getElementById('uname')
+pname = document.getElementById('pname')
 yyy = function(){
     event.preventDefault();
 }
 funone = function(){
     if (username != a.value && a.value != ""){
-        document.getElementById('uname').style.display = "block";
+        uname.innerHTML = 'Incorrect Username'
         yyy();
         return;
     }  
 }
 funtwo = function(){
     if (password != b.value && b.value != ""){
-        document.getElementById('pname').style.display = "block";
+        pname.innerHTML = 'Incorrect Password'
         yyy();
         return;
     }    
 } 
 funthree = function(){
    if(a.value == ""){
-       document.getElementById('unamee').style.display = "block";
-       yyy();
-       return;
-   }
-   else{
-    document.getElementById('unamee').style.display = "none";
+        uname.innerHTML = 'Please fill in this field'
+        yyy();
+        return;
    }
 }
 funfour = function(){
     if(b.value == ""){
-        document.getElementById('pnamee').style.display = "block";
+        pname.innerHTML = 'Please fill in this field'
         yyy();
         return;
     }
-    else{
-        document.getElementById('pnamee').style.display = "none";
-       }
 }
-
-c.addEventListener('click', () =>{
+funfive = function(){
+    if(username == a.value){
+        yyy();
+        uname.innerHTML = ''
+        return
+    }
+    if(password == b.value){
+        yyy();
+        pname.innerHTML = ''
+        return
+    }
+}
+funsix = function(){
+    if(username == a.value && password == b.value){
+        location.replace('home.html')
+    }
+}
+validate = function(){
     funone();
     funtwo();
     funthree();
-    funfour()
-})
+    funfour();
+    funfive();
+    funsix();
+}

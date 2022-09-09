@@ -1,4 +1,5 @@
 #sign a {
+    display: block;
     background-color: rgb(57, 133, 57, 80%);
     padding: 20px;
     font-size: 15px;
@@ -6,7 +7,8 @@
     color: white;
     border-radius: 9px;
     position: relative;
-    top: 25px;
+    width: fit-content;
+    float: left;
 }
 #reg {
     text-align: center;
@@ -23,17 +25,35 @@
 #password {
     margin-top: 10px;
 }
+#dont {
+    display: block;
+    width: 100%;
+}
+#sign {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+}
 #login{
     float: right;
-    margin-right: 10px;
+    width: 50%;
+    margin-top: 20px;
 }
-#login a {
+#login input {
     background-color: rgb(57, 133, 57, 80%);
+    padding: 20px;
     padding: 20px;
     font-size: 15px;
     text-decoration: none;
     color: white;
     border-radius: 9px;
     position: relative;
-    top: -14px;
+    width: fit-content;
+    float: right;
+}
+#uname {
+    display: block;
+}
+#pname {
+    display: block;
 }

@@ -14,16 +14,15 @@
         <p class="sub">The market brought to your comfort</p>
         <!--<p id="reg">Registration Succesful</p>-->
         <p>Input your detils below:</p>
-        <div class="first">
-            <p>Username: <br> <span id="uname">Incorrect Username</span>
-                <span id="unamee">Fill out this field</span> </p>
+        <form class="first" onsubmit="validate()">
+            <p>Username: <br> <span id="uname"></span></p>
             <input type="text" value="" id="username" placeholder="Username is case sensitive"><br>
-            <p>Password*: <br> <span id="pname">Incorrect Password</span>
-                <span id="pnamee">Fill out this field</span> </p>
+            <p>Password*: <br> <span id="pname"></span></p>
             <input type="password" name="" id="password" placeholder="Password is case sensitive too">
-            <p id="sign">Don't have an account yet? <br> <a href="register.html">Sign up</a></p>
-            <p id="login"><a href="home.html" id="submit">Login</a></p>
-        </div>
+            <p id="dont">Don't have an account yet? </p>
+            <div id="sign"><a href="register.html">Sign up</a></div>
+            <div id="login"><input type="submit" value="Login" id="submit"></div>
+        </form>
     </div>
     <script src="login.js"></script>
 </body>
