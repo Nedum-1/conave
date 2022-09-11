@@ -1,11 +1,11 @@
 //MENU BUTTON...
 let links = document.querySelector('#links')
 function open_menu(){
-    if(links.style.height == "200px"){
+    if(links.style.height == "150px"){
         links.style.height = 0;
     }
     else{
-        links.style.height = "200px";
+        links.style.height = "150px";
     }}
 
 

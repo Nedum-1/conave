@@ -61,7 +61,8 @@ header {
     border: 1px solid black;
 }
 #links a:hover, #links #active {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.774);
+    color: black;
 }
 #link {
     display: none;
@@ -237,20 +238,21 @@ span .amount {
     box-shadow: 0 0 1rem;
 }
 .catss {
-    width: 20%;
-    height:20%;
+    width: 30%;
+    height:30%;
     display: inline-block;
     text-transform: capitalize;
     text-align: center;
+    font-size: 15px;
     border: 1px solid black;
-    margin-left: 4%;
-    margin-bottom: 4%;
+    margin-left: 2%;
+    margin-bottom: 2%;
   
     padding: 20px;
 }
 .cats img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .cat {
     width: 95%;
