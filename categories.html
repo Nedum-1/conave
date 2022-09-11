@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conave Online shopping platform</title>
+    <link rel="stylesheet" href="footer.css">
+    <link media="screen and (max-width: 900px)" rel="stylesheet" href="categoriesand.css">
+    <link media="screen and (min-width: 901px)" rel="stylesheet" href="categoriespc.css">
+    <script src="https://kit.fontawesome.com/76acaa6079.js"></script>
+</head>
+<body>
+    <header>
+        <div id="the"> <div class="con"> CONAVE </div>
+            <label id="icon" onclick="open_menu()">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label id="icon2">
+                <i class="fas fa-user"></i>
+            </label>
+           
+            <div id="link">
+                <div class="search">
+                    <input type="text" id="search-button" name="No" placeholder="Search">
+                    <label><i class="fas fa-search"></i></label>
+                </div>
+                <a href="home.html"> <i class="fas fa-home"></i> Home</a>
+                <a href="#">  <i class="fas fa-shopping-cart"></i> Cart</a>
+                <a href="#" id="active"> <i class="fas fa-list"></i> Categories</a>
+                <a href="#" onclick="openit()">  <i class="fas fa-user"></i> Account</a>
+            </div>
+
+            <div id="links">
+                <a href="home.html">Home</a>
+                <a href="#">Cart</a>
+                <a href="categories.html"  id="active">Categories</a>
+        </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="categories">
+        <div class="cat">
+            <p>Categories</p>
+                <a href="#elec">
+                    <div class="catss">
+                        <div class="cats" id="cat1">
+                            <img src="cat\electronics.webp" class="cat-img">
+                        </div>
+                            <label>electronics</label>
+                    </div>
+                </a>
+
+                <a href="#fash">
+                    <div class="catss">    
+                        <div class="cats" id="cat2">
+                            <img src="cat\fashion.jpg" class="cat-img">
+                        </div>
+                            <label>fashion</label>
+                    </div> 
+                </a>
+
+                <a href="">
+                    <div class="catss">
+                        <div class="cats" id="cat3">
+                            <img src="cat\gadgets.jfif" class="cat-img">
+                        </div>
+                            <label>gadgets</label>
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="catss">    
+                        <div class="cats" id="cat4">
+                            <img src="cat\laptop.png" class="cat-img">
+                        </div>
+                            <label>laptops</label>
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="catss">           
+                        <div class="cats" id="cat5">
+                            <img src="cat\phone.jpg" class="cat-img">
+                        </div>
+                            <label>phones</label>
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="catss">    
+                        <div class="cats" id="cat6">
+                            <img src="cat\edibles.png" class="cat-img">
+                        </div>
+                            <label>edibles</label>
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="catss">    
+                        <div class="cats" id="cat7">
+                            <img src="cat\jewelry.webp" class="cat-img">
+                        </div>
+                            <label>jewelry</label>
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="catss">        
+                        <div class="cats" id="cat8">
+                            <img src="cat\mwears.webp" class="cat-img">
+                        </div>
+                            <label>m-wears</label>
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="catss">       
+                        <div class="cats" id="cat9">
+                            <img src="cat\wwears.jpg" class="cat-img">
+                        </div>
+                            <label>w-wears</label>
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="catss">       
+                        <div class="cats" id="cat10">
+                            <img src="cat\automobile.jpg" class="cat-img">
+                        </div>
+                            <label>automobile</label>
+                    </div>  
+                </a>  
+                
+                <a href="">
+                    <div class="catss">       
+                        <div class="cats" id="cat11">
+                            <img src="cat\fwear.webp" class="cat-img">
+                        </div>
+                            <label>foot wears</label>
+                    </div>  
+                </a>  
+            </div>
+        </div>
+        <!--Recommended section-->
+    
+    <div class="recommended">
+        <p id="elec">Electronics</p>
+        <!--First Product-->
+        <div id="rec1" class="rec">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    Samsung Galaxy S10
+                </span>
+                <span class="rating">
+                    Rating: <i class="fas fa-heart"></i>
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦259,450.93</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+
+        <!--Second Product-->
+        <div class="rec" id="rec2">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    P47 wireless headset
+                </span>
+                <span class="rating">
+                    Rating:
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦6,000</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+
+        <!--Third Product-->
+        <div id="rec3" class="rec">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    Wireless computer keyboard
+                </span>
+                <span class="rating">
+                    Rating:
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦8,900</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+
+        <!--Fourth Product-->
+        <div id="rec4" class="rec">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    Oraimo Power Bank
+                </span>
+                <span class="rating">
+                    Rating:
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦12,000</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+
+        <!--Fifth Product-->
+        <div id="rec5" class="rec">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    Phillips Tash 406
+                </span>
+                <span class="rating">
+                    Rating:
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦67,000</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+
+        <!--Fifth Product-->
+        <div id="rec5" class="rec">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    Phillips Tash 406
+                </span>
+                <span class="rating">
+                    Rating:
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦67,000</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+
+        <!--Fifth Product-->
+        <div id="rec5" class="rec">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    Phillips Tash 406
+                </span>
+                <span class="rating">
+                    Rating:
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦67,000</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="promo">
+       <div class="promo1">
+        Promo Sales end this weekend, Get yours now
+       </div>
+    </div>
+
+
+    <div class="recommended">
+        <p id="fash">Fashion</p>
+        <!--First Product-->
+        <div id="rec1" class="rec">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    Samsung Galaxy S10
+                </span>
+                <span class="rating">
+                    Rating: <i class="fas fa-star"></i>
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦259,450.93</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+
+        <!--Second Product-->
+        <div class="rec" id="rec2">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    P47 wireless headset
+                </span>
+                <span class="rating">
+                    Rating:
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦6,000</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+
+        <!--Third Product-->
+        <div id="rec3" class="rec">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    Wireless computer keyboard
+                </span>
+                <span class="rating">
+                    Rating:
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦8,900</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+
+        <!--Fourth Product-->
+        <div id="rec4" class="rec">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    Oraimo Power Bank
+                </span>
+                <span class="rating">
+                    Rating:
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦12,000</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+
+        <!--Fifth Product-->
+        <div id="rec5" class="rec">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    Phillips Tash 406
+                </span>
+                <span class="rating">
+                    Rating:
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦67,000</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+
+        <!--Fifth Product-->
+        <div id="rec5" class="rec">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    Phillips Tash 406
+                </span>
+                <span class="rating">
+                    Rating:
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦67,000</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+
+        <!--Fifth Product-->
+        <div id="rec5" class="rec">
+            <img src="" alt="">
+            <div class="details">
+                <span class="name">
+                    Phillips Tash 406
+                </span>
+                <span class="rating">
+                    Rating:
+                </span>
+                <span class="purchase" >
+                    <span class="amount">₦67,000</span>
+                    <button class="add">Add to cart</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="ffirst">
+            <h3>Conave</h3>
+            <div class="line"></div>
+            <p>You can also contact us through</p>
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-envelope"></i>
+            <i class="fa fa-whatsapp"></i>
+        </div>
+        <div class="line"></div>
+        <div class="terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Copyright Infringement Policy</a>
+            <a href="#">About us</a>
+            <a href="#">Terms and conditions</a>
+        </div>
+   </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="space-account">
+        <div id="ff-account">
+            <div id="account">
+                    <i id="close-nav" class="fas fa-close"></i>
+                <div id="user-pic">
+                        <i id="user-icon" class="fas fa-user"></i>
+                </div>
+                <p id="name">Hello, Chinedum</p> 
+                <a href="#" class="acc-links">my account</a>
+                <a href="#" class="acc-links">manage account</a>
+                <a href="#" class="acc-links">customer care</a>
+                <a href="#" class="acc-links">change password</a>
+                <a href="#" class="acc-links">inbox</a>
+                <a href="#" class="acc-links">purchases</a>
+                <a href="#" class="acc-links">help</a>
+                <a href="#" class="acc-links">about</a>
+                <a href="#" class="acc-links" onclick="logout()">log out</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="show"><div id="ans"><div class="anss">Are you sure you want to logout?
+        <br><a href="index.html" class="yes">Yes</a><a href="#" class="no">No</a>
+
+    <script src="categories.js"></script>
+</body>
+</html>

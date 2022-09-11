@@ -636,4 +636,64 @@ input[name = "r"]{
         height: 100%;
         border-radius: 20%;
     }
+
+
+    #prec {
+        position: absolute;
+        
+        color: white;
+    }
+    .recommended, .bestselling {
+        font-family: cursive;
+        display: flex;
+        width: 100%;
+        min-height: 280px;
+        max-height: 300px;
+        background: rgba(0, 0, 128, 0.37);
+        padding: 8px;
+        overflow-x: auto;
+        margin: 0;
+        border-radius: 6px;
+    }
+    
+    .rec, .best {
+        margin-top: 30px;
+        background-color: white; 
+        border-radius: 10px;
+        min-width: 200px;
+        padding: 7px;
+        font-size: 15px;
+        margin-right: 8px;
+    }
+    .rec img, .best img {
+        height: 130px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .rec span, .best span {
+        display: block;
+    }
+    .purchase {
+        padding-top: 10px;
+    
+    }
+    span .amount {
+        display: inline-block;
+        margin-top: 5px;
+    }
+    .add {
+        background: orangered;
+        color: white;
+        float: right;
+        font-size: 12px;
+        border-radius: 3px;
+        padding: 7px;
+        border:none ;
+        width: 80px;
+    }
+    .details .name {
+        white-space: nowrap;
+        overflow-x: hidden;
+    }
+    
 }
