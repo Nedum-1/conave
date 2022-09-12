@@ -102,7 +102,7 @@ header {
     color: white;
 }
 .recommended, .bestselling {
-    font-family: cursive;
+    font-family: sans-serif;
     display: flex;
     width: 100%;
     min-height: 280px;
