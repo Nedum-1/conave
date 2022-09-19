@@ -411,32 +411,32 @@ input[name = "r"]{
 }
 .nftt {
     display: block;
-    width: 100%;
-    background-color: transparent;
+    width: fit-content;
+    background-color: black;
     color: white;
     overflow: hidden;
     display: block;
     padding: 10px;
     font-family: sans-serif;
-    animation-name: noti;
-    animation-duration: 10s;
     background-color: black;
 }
 .nft {
     white-space: nowrap;
-    width: 908px;
-    margin-left: 120%;
+    width: fit-content;
+    margin-left: -100%;
     font-size: 20px;
     display: block;
+    animation-name: noti;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 .nftd{
     display: none;
 }
 @keyframes noti {
-    0%{height: 0; padding: 0;}
-    21%{height: auto; padding: 10px;}
-    50%{background-color: black;}
-    100%{background-color: black;}
+    0%{margin-left: 100vw;}
+    100%{margin-left: -100%;}
 }
 
 @media (max-width: 900px){
