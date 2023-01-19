@@ -52,7 +52,7 @@ funfive = function(){
 }
 funsix = function(){
     if(username == a.value && password == b.value){
-        location.replace('home.html')
+        location.replace('../html/home.html')
     }
 }
 validate = function(){
