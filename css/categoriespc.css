@@ -1,134 +1,88 @@
-body{
-    margin: 0;
+body {
     padding: 0;
-    border: none;
+    margin: 0;
 }
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
 }
 header {
+    position: fixed;
+    top: 0;
     width: 100%;
-    height:auto;
-    box-shadow: 0 0 1rem black;
-    background: url("images/s1.png");
+    background-color: teal;
+    background: url("images/s2.png");
+    background-attachment: fixed;
+    background-size: contain;
     animation-name: innit;
     animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+main {
+    margin-top: 110px;
 }
 #the {
-    background: rgba(0, 0, 0, 0.521);          
-}
-#icon {
-    float: right;
-    margin-right: 5px;
-    font-size: 30px;
-    cursor: pointer;
-}
-#icon2 {
-    float: left;
-    margin-left: 5px;
-    font-size: 30px;
-    cursor: pointer;
-}
-#links {
-    text-align: center;
-    height: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    background-color: transparent;
-    padding-top: 20px;
-    position: relative;
-    transition: 0.3s;
-    overflow: hidden
-    
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.39);          
 }
-#links a{
+#link a{
     text-decoration: none;
     padding: 10px;
     color: white;
     font-family: monospace;
-    font-size: 13px;
     text-transform: uppercase;
-    display: block;
+    position: relative;
+    display: inline-block;
     background-color: rgb(0, 0, 0, 50%);
     margin-top: 6px;
-    width: 100px;
+    width: fit-content;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     border-radius: 6px;
     border: 1px solid black;
+    text-align: center;
 }
-#links a:hover, #links #active {
+#link i {
+    font-size: 16px;
+}
+#link a:hover, #link #active {
+    /*background-color: rgb(0, 0, 0);*/
     background-color: rgba(255, 255, 255, 0.774);
     color: black;
 }
-#link {
+#links {
     display: none;
 }
-#the {
-    padding: 15px;
-    color: white;
-    font-weight: bold;
-    font-family: sans-serif;
-    font-size: 30px;
-}
-#the p {
-    display: inline;
-}
-@keyframes innit {
-    0%{background: url("images/s1.png");
-        background-attachment: fixed;
-        background-size: contain;}
-    25%{background: url("images/s2.png");
-        background-attachment: fixed;
-        background-size: contain;}
-    50%{background: url("images/s3.png");
-        background-attachment: fixed;
-        background-size: contain;}
-    75%{background: url("images/s4.png");
-        background-attachment: fixed;
-        background-size: contain;}   
-    100%{background: url("images/s5.png");
-        background-attachment: fixed;
-        background-size: contain;}
-}
-#icon {
-    float: right;
-    margin-right: 5px;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-}
-#icon2 {
-    color: white;
-    float: left;
-    margin-left: 5px;
-    font-size: 30px;
-    cursor: pointer;
+#icon, #icon2 {
+    display: none;
 }
 .con {
-   display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
     color: white;
-    text-align: center;
-    width: calc(100% - 70px);
+    font-family: sans-serif;
 }
-.search {
-    position: relative;
-    right: 50%;
-    transform: translateX(-50%);
-    color: red;
+@keyframes innit {
+    0%{background: url("../OTHERS/images/s1.png");
+        background-attachment: fixed;
+        background-size: contain;}
+    25%{background: url("../OTHERS/images/s2.png");
+        background-attachment: fixed;
+        background-size: contain;}
+    50%{background: url("../OTHERS/images/s3.png");
+        background-attachment: fixed;
+        background-size: contain;}
+    75%{background: url("../OTHERS/images/s4.png");
+        background-attachment: fixed;
+        background-size: contain;}   
+    100%{background: url("../OTHERS/images/s5.png");
+        background-attachment: fixed;
+        background-size: contain;}
 }
-.search input {
-    background-color: red;
-}
-
-
-
-
-
-
-
 .search{
     width: 250px;
     display: inline-block;
@@ -237,21 +191,21 @@ span .amount {
     box-shadow: 0 0 1rem;
 }
 .catss {
-    width: 30%;
-    height:30%;
+    min-width: 154px;
+    width: 20%;
+    height:20%;
     display: inline-block;
     text-transform: capitalize;
     text-align: center;
-    font-size: 15px;
     border: 1px solid black;
-    margin-left: 2%;
-    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-bottom: 4%;
   
     padding: 20px;
 }
 .cats img {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
 }
 .cat {
     width: 95%;
@@ -259,6 +213,9 @@ span .amount {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+.cat a {
+    text-decoration: none;
 }
 .cat p {
     padding: 20px 20px 20px 0px;

@@ -5,39 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Conave Online shopping platform</title>
-    <link rel="stylesheet" href="footer.css">
-    <link media="screen and (max-width: 900px)" rel="stylesheet" href="categoriesand.css">
-    <link media="screen and (min-width: 901px)" rel="stylesheet" href="categoriespc.css">
+    <link rel="stylesheet" href="..\css\footer.css">
+    <link media="screen and (max-width: 900px)" rel="stylesheet" href="..\css\categoriesand.css">
+    <link media="screen and (min-width: 901px)" rel="stylesheet" href="..\css\categoriespc.css">
     <script src="https://kit.fontawesome.com/76acaa6079.js"></script>
 </head>
 <body>
-    <header>
-        <div id="the"> <div class="con"> CONAVE </div>
-            <label id="icon" onclick="open_menu()">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label id="icon2">
-                <i class="fas fa-user"></i>
-            </label>
-           
-            <div id="link">
-                <div class="search">
-                    <input type="text" id="search-button" name="No" placeholder="Search">
-                    <label><i class="fas fa-search"></i></label>
-                </div>
-                <a href="home.html"> <i class="fas fa-home"></i> Home</a>
-                <a href="#">  <i class="fas fa-shopping-cart"></i> Cart</a>
-                <a href="#" id="active"> <i class="fas fa-list"></i> Categories</a>
-                <a href="#" onclick="openit()">  <i class="fas fa-user"></i> Account</a>
-            </div>
-
-            <div id="links">
-                <a href="home.html">Home</a>
-                <a href="#">Cart</a>
-                <a href="categories.html"  id="active">Categories</a>
-        </div>
-        </div>
-    </header>
+    
     <main>
 
         <div class="categories">
@@ -46,7 +20,7 @@
                 <a href="#elec">
                     <div class="catss">
                         <div class="cats" id="cat1">
-                            <img src="cat\electronics.webp" class="cat-img">
+                            <img src="..\OTHERS\cat\electronics.webp" class="cat-img">
                         </div>
                             <label>electronics</label>
                     </div>
@@ -55,7 +29,7 @@
                 <a href="#fash">
                     <div class="catss">    
                         <div class="cats" id="cat2">
-                            <img src="cat\fashion.jpg" class="cat-img">
+                            <img src="..\OTHERS\cat\fashion.jpg" class="cat-img">
                         </div>
                             <label>fashion</label>
                     </div> 
@@ -64,7 +38,7 @@
                 <a href="">
                     <div class="catss">
                         <div class="cats" id="cat3">
-                            <img src="cat\gadgets.jfif" class="cat-img">
+                            <img src="..\OTHERS\cat\gadgets.jfif" class="cat-img">
                         </div>
                             <label>gadgets</label>
                     </div>
@@ -73,7 +47,7 @@
                 <a href="">
                     <div class="catss">    
                         <div class="cats" id="cat4">
-                            <img src="cat\laptop.png" class="cat-img">
+                            <img src="..\OTHERS\cat\laptop.png" class="cat-img">
                         </div>
                             <label>laptops</label>
                     </div>
@@ -82,7 +56,7 @@
                 <a href="">
                     <div class="catss">           
                         <div class="cats" id="cat5">
-                            <img src="cat\phone.jpg" class="cat-img">
+                            <img src="..\OTHERS\cat\phone.jpg" class="cat-img">
                         </div>
                             <label>phones</label>
                     </div>
@@ -91,7 +65,7 @@
                 <a href="">
                     <div class="catss">    
                         <div class="cats" id="cat6">
-                            <img src="cat\edibles.png" class="cat-img">
+                            <img src="..\OTHERS\cat\edibles.png" class="cat-img">
                         </div>
                             <label>edibles</label>
                     </div>
@@ -100,7 +74,7 @@
                 <a href="">
                     <div class="catss">    
                         <div class="cats" id="cat7">
-                            <img src="cat\jewelry.webp" class="cat-img">
+                            <img src="..\OTHERS\cat\jewelry.webp" class="cat-img">
                         </div>
                             <label>jewelry</label>
                     </div>
@@ -109,7 +83,7 @@
                 <a href="">
                     <div class="catss">        
                         <div class="cats" id="cat8">
-                            <img src="cat\mwears.webp" class="cat-img">
+                            <img src="..\OTHERS\cat\mwears.webp" class="cat-img">
                         </div>
                             <label>m-wears</label>
                     </div>
@@ -118,7 +92,7 @@
                 <a href="">
                     <div class="catss">       
                         <div class="cats" id="cat9">
-                            <img src="cat\wwears.jpg" class="cat-img">
+                            <img src="..\OTHERS\cat\wwears.jpg" class="cat-img">
                         </div>
                             <label>w-wears</label>
                     </div>
@@ -127,7 +101,7 @@
                 <a href="">
                     <div class="catss">       
                         <div class="cats" id="cat10">
-                            <img src="cat\automobile.jpg" class="cat-img">
+                            <img src="..\OTHERS\cat\automobile.jpg" class="cat-img">
                         </div>
                             <label>automobile</label>
                     </div>  
@@ -136,7 +110,7 @@
                 <a href="">
                     <div class="catss">       
                         <div class="cats" id="cat11">
-                            <img src="cat\fwear.webp" class="cat-img">
+                            <img src="..\OTHERS\cat\fwear.webp" class="cat-img">
                         </div>
                             <label>foot wears</label>
                     </div>  
@@ -147,124 +121,6 @@
     
     <div class="recommended">
         <p id="elec">Electronics</p>
-        <!--First Product-->
-        <div id="rec1" class="rec">
-            <img src="electronics\cable.webp" alt="">
-            <div class="details">
-                <span class="name">
-                    Copper cable wire  
-                </span>
-                <span class="rating">
-                    Rating:
-                </span>
-                <span class="purchase" >
-                    <span class="amount">₦99,500</span>
-                    <button class="add">Add to cart</button>
-                </span>
-            </div>
-        </div>
-
-        <!--Second Product-->
-        <div class="rec" id="rec2">
-            <img src="electronics\bulb.jfif" alt="">
-            <div class="details">
-                <span class="name">
-                    3 in 1 Electric Bulb
-                </span>
-                <span class="rating">
-                    Rating:
-                </span>
-                <span class="purchase" >
-                    <span class="amount">₦999</span>
-                    <button class="add">Add to cart</button>
-                </span>
-            </div>
-        </div>
-
-        <!--Third Product-->
-        <div id="rec3" class="rec">
-            <img src="electronics\television.webp" alt="">
-            <div class="details">
-                <span class="name">
-                    Hisense Hd Led Television
-                </span>
-                <span class="rating">
-                    Rating:
-                </span>
-                <span class="purchase" >
-                    <span class="amount">₦90,000</span>
-                    <button class="add">Add to cart</button>
-                </span>
-            </div>
-        </div>
-
-        <!--Fourth Product-->
-        <div id="rec4" class="rec">
-            <img src="electronics\speakers.webp" alt="">
-            <div class="details">
-                <span class="name">
-                    Polystar Home Theater System Pv Hf 208
-                </span>
-                <span class="rating">
-                    Rating:
-                </span>
-                <span class="purchase" >
-                    <span class="amount">₦55,000</span>
-                    <button class="add">Add to cart</button>
-                </span>
-            </div>
-        </div>
-
-        <!--Fifth Product-->
-        <div id="rec5" class="rec">
-            <img src="electronics\joystick.webp" alt="">
-            <div class="details">
-                <span class="name">
-                    Wireless Controller For PlayStation 4 - Red 
-                </span>
-                <span class="rating">
-                    Rating:
-                </span>
-                <span class="purchase" >
-                    <span class="amount">₦8,500</span>
-                    <button class="add">Add to cart</button>
-                </span>
-            </div>
-        </div>
-
-        <!--Sixth Product-->
-        <div id="rec5" class="rec">
-            <img src="electronics\camera.webp" alt="">
-            <div class="details">
-                <span class="name">
-                    Nikon Dslr Camera D7100 With 18 - 105mm 
-                </span>
-                <span class="rating">
-                    Rating:
-                </span>
-                <span class="purchase" >
-                    <span class="amount">₦410,000</span>
-                    <button class="add">Add to cart</button>
-                </span>
-            </div>
-        </div>
-
-        <!--Seventh Product-->
-        <div id="rec5" class="rec">
-            <img src="electronics\remote.webp" alt="">
-            <div class="details">
-                <span class="name">
-                    Gotv Remote Control 
-                </span>
-                <span class="rating">
-                    Rating:
-                </span>
-                <span class="purchase" >
-                    <span class="amount">₦2,000</span>
-                    <button class="add">Add to cart</button>
-                </span>
-            </div>
-        </div>
     </div>
 
 
@@ -399,7 +255,33 @@
     </main>
 
 
+    <header>
+        <div id="the"> <div class="con"> CONAVE </div>
+            <label id="icon" onclick="open_menu()">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label id="icon2">
+                <i class="fas fa-user"></i>
+            </label>
+           
+            <div id="link">
+                <div class="search">
+                    <input type="text" id="search-button" name="No" placeholder="Search">
+                    <label><i class="fas fa-search"></i></label>
+                </div>
+                <a href="home.html"> <i class="fas fa-home"></i> Home</a>
+                <a href="#">  <i class="fas fa-shopping-cart"></i> Cart</a>
+                <a href="#" id="active"> <i class="fas fa-list"></i> Categories</a>
+                <a href="#" onclick="openit()">  <i class="fas fa-user"></i> Account</a>
+            </div>
 
+            <div id="links">
+                <a href="home.html">Home</a>
+                <a href="#">Cart</a>
+                <a href="categories.html"  id="active">Categories</a>
+        </div>
+        </div>
+    </header>
 
 
     <footer>
@@ -460,6 +342,6 @@
     <div id="show"><div id="ans"><div class="anss">Are you sure you want to logout?
         <br><a href="index.html" class="yes">Yes</a><a href="#" class="no">No</a>
 
-    <script src="categories.js"></script>
+    <script src="..\js\categories.js"></script>
 </body>
 </html>

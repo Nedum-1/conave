@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Blank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/76acaa6079.js"></script>
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="..\css\footer.css">
+</head>
+<body id="body">
+    <header>
+        <div id="the"> <div class="con"> CONAVE </div>
+            <label id="icon" onclick="open_menu()">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label id="icon2">
+                <i class="fas fa-user"></i>
+            </label>
+           
+            <div id="link">
+                <div class="search">
+                    <input type="text" id="search-button" name="No" placeholder="Search">
+                    <label><i class="fas fa-search"></i></label>
+                </div>
+                <a href="home.html"> <i class="fas fa-home"></i> Home</a>
+                <a href="#">  <i class="fas fa-shopping-cart"></i> Cart</a>
+                <a href="categories.html"> <i class="fas fa-list"></i> Categories</a>
+                <a href="#" onclick="openit()">  <i class="fas fa-user"></i> Account</a>
+            </div>
+
+            <div id="links">
+                <a href="home.html">Home</a>
+                <a href="#">Cart</a>
+                <a href="categories.html">Categories</a>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="whatsapp">
+            <a href="https://wa.me/message/WDTAFGBXCVO6H1" title="Chat with us on Whatsapp"><i class="fa fa-whatsapp"></i></a>
+        </div>
+        <div class="content">
+            <div class="image">
+                <div class="pic">
+                    <img src="..\OTHERS\images\p6.jpeg" alt="cosmetics" id="mainpic">
+                </div>
+                <div class="sub">
+                    <div class="sub-pic">
+                        <img src="..\OTHERS\images\p6.jpeg" alt="cosmetics" id="sub1">
+                    </div>
+                    <div class="sub-pic">
+                        <img src="..\OTHERS\images\p5.jpeg" alt="cosmetics" id="sub2">
+                    </div>
+                    <div class="sub-pic">
+                        <img src="..\OTHERS\images\p4.jpeg" alt="cosmetics" id="sub3">
+                    </div>
+                </div>
+            </div>
+            <div class="details">
+                <h2 id="name"> Generic make-up kit for all skin types </h2>
+                <p id="brand"> Brand: </p>
+                <p>  Order now and have it delivered in less than !4 days</p>
+                <h1 id="price">₦15,000</h1>
+                <p id="quantity"> Quantity: <input type="number" value="1"> </p>
+                <div class="fav-but">
+                    <button class="add">Add to cart</button> <div class="fav"><i class="fa-solid fa-heart"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="content" style="flex-direction: column;">
+            <p id="description"> <span> Description: <br> </span> Infinix Smart 6 comes with a 6.60-inch 
+                touchscreen display offering a resolution of 720 x 1600 pixels. It comes with 2 GB of RAM. 
+                The Infinix Smart 6 runs Android 11 (Go edition) and is powered by a 5000 mAh non-removable battery.
+                The Infinix Smart 6 on the rear packs a dual camera of 8 MP Primary Camera with auto-focus, a 0.8 MP
+                 depth camera and dual-LED flash. It has a single 5 MP front camera setup for selfies.
+                The Infinix Smart 6 runs XOS 7.6 is based on Android 11 (Go edition) which is built on the Unisoc
+                 SC9863A (28 nm) chip set and packs 32GB of inbuilt storage that can be expanded via microSD card
+                  (up to 512GB) with a dedicated slot. The Infinix Smart 6 is a dual-SIM mobile and the connectivity
+                   options on the Infinix Smart 6 include 802.11 b/g/n, Micro-USB, FM radio, and 4G with active 4G on
+                    both SIM cards. Sensors on the phone include ambient light sensor, proximity sensor, accelerometer
+                     and a rear fingerprint sensor. The Infinix Smart 6 supports face unlock.</p>
+
+            <p id="specifications">
+                <span>Specifications:</span>
+                <pre>
+1. 5000mAh Big Battery
+2. 6.6 Inches HD+ Waterdrop Sunlight Display
+3. 4G LTE
+4. 8MP Selfie Camera with Flash
+5. 8MP Rear Camera with Dual Flash
+6. 32GB ROM + 2GB RAM
+7. Android 11 (Go Edition)
+8. Fingerprint & Face Unlock
+                </pre>
+            </p>
+        </div>
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="ffirst">
+            <h3>Conave</h3>
+            <div class="line"></div>
+            <p>You can also contact us through</p>
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-envelope"></i>
+            <i class="fa fa-whatsapp"></i>
+        </div>
+        <div class="line"></div>
+        <div class="terms">
+            <a href="#">Privacy policy</a>
+            <a href="#">Copyright Infringement Policy</a>
+            <a href="#">About us</a>
+            <a href="#">Terms and conditions</a>
+        </div>
+   </footer>
+
+
+
+
+
+
+
+   <div id="space-account">
+    <div id="ff-account">
+        <div id="account">
+                <i id="close-nav" class="fas fa-close"></i>
+            <div id="user-pic">
+                    <i id="user-icon" class="fas fa-user"></i>
+            </div>
+            <p id="name">Hello,</p> 
+            <a href="#" class="acc-links">my account</a>
+            <a href="#" class="acc-links">manage account</a>
+            <a href="#" class="acc-links">customer care</a>
+            <a href="#" class="acc-links">change password</a>
+            <a href="#" class="acc-links">inbox</a>
+            <a href="#" class="acc-links">purchases</a>
+            <a href="#" class="acc-links">help</a>
+            <a href="#" class="acc-links">about</a>
+            <a href="#" class="acc-links" onclick="logout()">log out</a>
+        </div>
+    </div>
+</div>
+
+<div id="show"><div id="ans"><div class="anss">Are you sure you want to logout?
+    <br><a href="index.html" class="yes">Yes</a><a href="#" class="no">No</a>
+   <script src="../js/product.js"></script>
+</body>
+</html>
