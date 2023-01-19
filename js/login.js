@@ -55,11 +55,16 @@ funsix = function(){
         location.replace('../html/home.html')
     }
 }
+funseven = function(){
+    if(username == a.value && password == b.value){
+        location.replace('html/home.html')
+    }
+}
 validate = function(){
     funone();
     funtwo();
     funthree();
     funfour();
     funfive();
-    funsix();
+    funseven();
 }
