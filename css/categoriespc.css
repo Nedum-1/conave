@@ -2,6 +2,10 @@ body {
     padding: 0;
     margin: 0;
 }
+#logo{
+    width: 250px;
+    height: auto;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -22,12 +26,15 @@ main {
     margin-top: 110px;
 }
 #the {
-    padding: 10px;
+    padding: 0px;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.39);          
+}
+#link {
+    padding: 8px;
 }
 #link a{
     text-decoration: none;
@@ -58,13 +65,6 @@ main {
 }
 #icon, #icon2 {
     display: none;
-}
-.con {
-    font-weight: bold;
-    font-size: 30px;
-    padding: 10px;
-    color: white;
-    font-family: sans-serif;
 }
 @keyframes innit {
     0%{background: url("../OTHERS/images/s1.png");

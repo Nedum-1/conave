@@ -3,6 +3,11 @@
     border: none;
     padding: 0;
 }
+#logo{
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
 body {
     background-color: teal;
     height: 100%;
@@ -33,10 +38,6 @@ body {
     text-align: center;
     font-size: larger;
     margin-bottom: 40px;
-}
-p {
-    margin-top: 20px;
-    color: rgb(43, 107, 43);
 }
 input {
     width: calc(100% - 20px);

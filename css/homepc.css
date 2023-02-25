@@ -43,10 +43,9 @@ header {
     min-height: 40px;
     max-height: auto;
 }
-#the p {
-    font-size: 30px;
-    float: left;
-    padding: 10px;
+#logo{
+    width: 250px;
+    height: auto;
 }
 .father {
     background: url("../OTHERS/images/s2.png");

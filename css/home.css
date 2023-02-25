@@ -75,8 +75,9 @@ header {
     font-family: sans-serif;
     font-size: 30px;
 }
-#the p {
-    display: inline;
+#logo{
+    width: 200px;
+    height: auto;
 }
 .father {
     background: url("../OTHERS/images/s2.png");
